@@ -6,12 +6,24 @@
 package myspring.myspring;
 
 /**
- *
- * @author gabrielle
+ * Отображение сообщений
  */
 interface MessageRenderer 
 {
+    /**
+     * Отобразить сообщение
+     */
     void render();
+
+    /**
+     * Установить провайдер сообщений
+     * @param provider провайдер сообщений
+     */
     void setMessageProvider(MessageProvider provider);
+
+    /**
+     * Получить провайдер сообщений
+     * @return провайдер сообщений
+     */
     MessageProvider getMessageProvider();
 }

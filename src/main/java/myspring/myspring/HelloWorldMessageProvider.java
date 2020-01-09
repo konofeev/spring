@@ -1,8 +1,7 @@
 package myspring.myspring;
 
 /**
- *
- * @author gabrielle
+ * Провайдер тестового собщения "Hello World!"
  */
 public class HelloWorldMessageProvider implements MessageProvider
 {

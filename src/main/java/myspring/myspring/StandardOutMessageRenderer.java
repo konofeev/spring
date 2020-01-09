@@ -6,13 +6,12 @@
 package myspring.myspring;
 
 /**
- *
- * @author gabrielle
+ * Стандратный поток оторажения
  */
 public class StandardOutMessageRenderer implements MessageRenderer
 {
     private MessageProvider provider;
-    
+
     @Override
     public void render() 
     {

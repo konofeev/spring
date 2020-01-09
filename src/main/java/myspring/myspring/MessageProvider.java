@@ -6,10 +6,13 @@
 package myspring.myspring;
 
 /**
- *
- * @author gabrielle
+ * Провайдер сообщений
  */
 interface MessageProvider 
 {
+    /**
+     * Получить сообщение
+     * @return сообщение
+     */
     String getMessage();
 }
