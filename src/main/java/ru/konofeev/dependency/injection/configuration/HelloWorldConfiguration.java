@@ -1,7 +1,11 @@
-package myspring.myspring;
+package ru.konofeev.dependency.injection.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import ru.konofeev.dependency.injection.helloworld.HelloWorldMessageProvider;
+import ru.konofeev.dependency.injection.helloworld.MessageProvider;
+import ru.konofeev.dependency.injection.helloworld.MessageRenderer;
+import ru.konofeev.dependency.injection.helloworld.StandardOutMessageRenderer;
 
 /**
  * Конфигурация Spring
@@ -28,6 +32,6 @@ public class HelloWorldConfiguration
     {
         MessageRenderer renderer = new StandardOutMessageRenderer();
         renderer.setMessageProvider(provider());
-        return  renderer;
+        return renderer;
     }
 }
