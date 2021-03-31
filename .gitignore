@@ -7,3 +7,9 @@ gradle
 gradlew
 gradlew.bat
 .idea/
+*.class
+.classpath
+.project
+bin/
+.vscode/
+.settings/

@@ -1,5 +1,4 @@
 apply plugin: 'java'
-apply plugin: 'jacoco'
 apply plugin: 'application'
 apply plugin: 'idea'
 
@@ -11,6 +10,7 @@ mainClassName = 'myspring.myspring.MyMain'
 repositories
 {
     maven { url 'http://nexus.sigma.sbrf.ru:8099/nexus/content/repositories/jcenter' }
+	mavenCentral()
 }
 
 dependencies {
@@ -30,7 +30,7 @@ dependencies {
     testRuntime group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: JUNIT_VERSION
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: JUNIT_VERSION
 
-    def LOMBOK = 'org.projectlombok:lombok:1.18.12'
+    def LOMBOK = 'org.projectlombok:lombok:1.18.16'
     testCompileOnly LOMBOK
     testAnnotationProcessor LOMBOK
     compileOnly LOMBOK
