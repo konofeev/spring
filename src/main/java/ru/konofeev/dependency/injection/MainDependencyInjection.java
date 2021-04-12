@@ -1,10 +1,9 @@
 package ru.konofeev.dependency.injection;
 
-import lombok.experimental.UtilityClass;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import ru.konofeev.dependency.injection.configuration.HelloWorldConfiguration;
+
+import lombok.experimental.UtilityClass;
 import ru.konofeev.dependency.injection.helloworld.MessageRenderer;
 import ru.konofeev.dependency.injection.knight.Knight;
 
@@ -15,6 +14,10 @@ import ru.konofeev.dependency.injection.knight.Knight;
 @UtilityClass
 public class MainDependencyInjection
 {
+    /**
+     * Точка входа
+     * @param arguments Аргументы приложения
+     */
     public void main(String[] arguments)
     {
         // Пример использования конфигурации с xml-описанием
